@@ -21,4 +21,5 @@ while True:
     random_detail = get_random_words(details)
 
     print(f'{random_name} from {random_place} {random_adverb} {random_verb} {random_noun}.')
-    input('Press [Enter] to generate a new sentence. \n')
+    if input('Press [Enter] to generate a new sentence or typpe [End] to end the program. \n') == 'End':
+        break
